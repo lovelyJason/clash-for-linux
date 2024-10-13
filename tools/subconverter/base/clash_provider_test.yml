@@ -2,7 +2,7 @@ mixed-port: 7890
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: 127.0.0.1:6061
+external-controller: 127.0.0.1:6063
 proxy-providers:
   HK:
     type: http
