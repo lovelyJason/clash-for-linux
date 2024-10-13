@@ -68,7 +68,7 @@ Clash订阅地址可访问！                                      [  OK  ]
 正在启动Clash服务...
 服务启动成功！                                             [  OK  ]
 
-Clash Dashboard 访问地址：http://<ip>:9090/ui
+Clash Dashboard 访问地址：http://<ip>:6061/ui
 Secret：xxxxxxxxxxxxx
 
 请执行以下命令加载环境变量: source /etc/profile.d/clash.sh
@@ -87,8 +87,8 @@ $ proxy_on
 - 检查服务端口
 
 ```bash
-$ netstat -tln | grep -E '9090|789.'
-tcp        0      0 127.0.0.1:9090          0.0.0.0:*               LISTEN     
+$ netstat -tln | grep -E '6061|789.'
+tcp        0      0 127.0.0.1:6061          0.0.0.0:*               LISTEN     
 tcp6       0      0 :::7890                 :::*                    LISTEN     
 tcp6       0      0 :::7891                 :::*                    LISTEN     
 tcp6       0      0 :::7892                 :::*                    LISTEN
@@ -145,11 +145,11 @@ $ proxy_off
 
 - 访问 Clash Dashboard
 
-通过浏览器访问 `start.sh` 执行成功后输出的地址，例如：http://192.168.0.1:9090/ui
+通过浏览器访问 `start.sh` 执行成功后输出的地址，例如：<http://192.168.0.1:6061/ui>
 
 - 登录管理界面
 
-在`API Base URL`一栏中输入：http://\<ip\>:9090 ，在`Secret(optional)`一栏中输入启动成功后输出的Secret。
+在`API Base URL`一栏中输入：http://\<ip\>:6061 ，在`Secret(optional)`一栏中输入启动成功后输出的Secret。
 
 点击Add并选择刚刚输入的管理界面地址，之后便可在浏览器上进行一些配置。
 
